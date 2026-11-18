@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutzerklärung – Causabee</title>
+<meta name="description" content="Wie Causabee mit dem umgeht, was hereinkommt, und mit deinen Google-Kontodaten: auf deinen Geräten gehalten, vor jeder KI getarnt, nie an den Entwickler gesendet.">
+<meta name="theme-color" content="#ffffff">
+<script src="../../lang.js?v=1"></script>
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<link rel="preload" href="../../assets/fonts/SourceSerif4.woff2" as="font" type="font/woff2" crossorigin>
+<!-- ?v= is the start of styles.css's shasum: change it with the file, or browsers keep the old one for up to 10 minutes. -->
+<link rel="stylesheet" href="../../styles.css?v=18f91102">
+</head>
+<body>
+<a class="skip" href="#main">Zum Inhalt springen</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href=".././"><img src="../../assets/icon.svg" alt="" width="28" height="28">Causabee</a>
+    <nav class="nav__links" aria-label="Hauptnavigation">
+      <a class="navlink" href=".././#how">Überblick</a>
+      <a class="navlink" href=".././#privacy">Datenschutz</a>
+      <a class="navlink" href="https://github.com/causabee/disguise">GitHub</a>
+      <a class="button button--small" href=".././#download">Beta testen</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <h1>Datenschutzerklärung</h1>
+  <p class="dated">Gültig ab 16. November 2026</p>
+
+  <section class="summary" aria-labelledby="short">
+    <h2 id="short">Die Kurzfassung</h2>
+    <ul>
+      <li>Was hereinkommt, und deine Anliegen liegen <strong>auf deinen Geräten</strong>. Wenn du die iCloud-Synchronisierung einschaltest, gehen sie auch in <strong>deine eigene private iCloud</strong>.</li>
+      <li>Ohne Causabee Pro liest <strong>das Modell von Apple auf deinem Gerät</strong>, was hereinkommt. <strong>Nichts verlässt es.</strong></li>
+      <li>Mit Causabee Pro oder mit Guthaben geht Text an eine größere KI — aber vorher werden <strong>Namen, Adressen und Nummern ersetzt</strong>: die meisten, nicht alle (siehe unten). Vor jedem Senden läuft eine Prüfung; findet sie einen Namen, den sie kennt, wird nichts gesendet. Er läuft über <strong>Causabees Server in der EU</strong>, der nichts davon behält: nur, wie viel jede Anfrage verbraucht hat.</li>
+      <li>Causabee hat <strong>keine Analysen, keine Werbung und keine Konten mit deinem Namen</strong>. Käufe laufen über Apple; der Entwickler sieht nie, wer du bist oder wie du zahlst.</li>
+      <li>Causabee ist <strong>Open Source</strong>, damit jeder prüfen kann, dass diese Seite stimmt.</li>
+    </ul>
+  </section>
+
+  <h2>Wer Causabee macht</h2>
+  <p>Causabee ist eine Open-Source-App für den Mac, das iPhone und das iPad, gemacht von Ralf Chille. Bis Version 0.5 hieß sie Matterbee; nur der Name hat sich geändert. Bei jeder Frage zu dieser Erklärung oder zu deinen Daten schreib an <a href="mailto:ralf@chille.de">ralf@chille.de</a>.</p>
+  <p>Alles Folgende beschreibt, was die App auf deinen eigenen Geräten tut, mit welchen Diensten sie für dich spricht und — nur für Causabee Pro — was Causabees eigener Server sieht und behält.</p>
+
+  <h2>Was Causabee liest</h2>
+  <h3>Mail</h3>
+  <p>Du verbindest in der App ein Mail-Konto: Gmail, iCloud oder einen anderen Anbieter über IMAP. Du meldest dich mit einem App-Passwort an; „Mit Google anmelden“ gibt es noch nicht. Causabee liest dann <strong>nur neue Mails mit dem Label, das du dafür nutzt</strong> (zum Beispiel „Causabee“). Den Rest deines Postfachs liest es nicht, und die Mails, die es liest, markiert es nicht einmal als gelesen.</p>
+  <p>Causabee <strong>schreibt nie in dein Postfach</strong>. Es kann keine Mail senden und keine löschen oder verschieben. Eine Nachricht, die Causabee für dich entwirft, öffnet sich in deiner Mail-App, und du sendest sie. Ein Dokument, das du auf dem iPhone scannst, bleibt auf deinem iPhone, in der Dateien-App unter „Auf meinem iPhone › Causabee“.</p>
+  <h3>Dateien und Screenshots</h3>
+  <p>Dateien, PDFs und Screenshots werden nur gelesen, wenn du sie in Causabee hineinziehst.</p>
+  <h3>Kalender und Erinnerungen</h3>
+  <p>Wenn du einen Termin oder eine Aufgabe zu Kalender oder Erinnerungen hinzufügst, fragt Causabee zuerst macOS um Zugriff. Es hält die Einträge, die du verbunden hast, auf deinem Mac mit Kalender und Erinnerungen auf Stand. Die Dienste von Apple synchronisieren sie, wie bei jeder anderen App.</p>
+
+  <h2>Wo deine Daten liegen</h2>
+  <ul>
+    <li><strong>Auf deinem Mac</strong>, in <code>~/Library/Application Support/Causabee</code>. Ohne iCloud-Synchronisierung verlässt nichts davon diesen Mac.</li>
+    <li><strong>In deiner privaten iCloud</strong>, nur wenn du die iCloud-Synchronisierung in den Einstellungen einschaltest (sie ist zuerst aus). Deine Anliegen, Aufgaben, Termine, Notizen, die Antworten des Assistenten, ein kurzer Überblick jeder Mail und der volle Text jeder Mail und jeder gescannten Datei, die Causabee gelesen hat, liegen in der privaten iCloud-Datenbank deines Apple-Kontos, damit jedes deiner Geräte sie hat. Die vollen Texte sind Ende-zu-Ende verschlüsselt. Nur du kannst sie lesen. Der Entwickler hat keinen Zugriff.</li>
+    <li><strong>In einem Ordner für jedes Anliegen</strong>, in iCloud Drive oder in einem Ordner deiner Wahl, für die Dateien, die dazugehören.</li>
+    <li><strong>In deinem Schlüsselbund</strong>, über den iCloud-Schlüsselbund geteilt, für dein App-Passwort der Mail, den Schlüssel, mit dem deine Geräte Causabee Pro nutzen, und alle Schlüssel von KI-Anbietern, die du selbst hinterlegt hast.</li>
+  </ul>
+
+  <h2>Wer liest, was hereinkommt</h2>
+  <p>Causabee nutzt ein KI-Modell, um das, was hereinkommt — Mails, Screenshots, Fotos, Dateien und Scans, Notizen, was du im Chat sagst — in Anliegen zu sortieren, Aufgaben und Termine zu finden, Zusammenfassungen zu schreiben und deine Fragen zu beantworten.</p>
+  <ul>
+    <li><strong>Mails, die eindeutig zu keinem Anliegen gehören</strong>, etwa Newsletter, bleiben durch einfache Regeln auf deinem Gerät außen vor, ganz ohne KI.</li>
+    <li><strong>Ohne Causabee Pro</strong> liest das Modell von Apple auf deinem Gerät neue Mails, wenn du „Einsortieren“ tippst, und die Screenshots und Scans, die du hinzufügst. Nichts wird irgendwohin gesendet.</li>
+    <li><strong>Auf einem Gerät ohne Apple Intelligence</strong> und ohne Pro kommt neue Mail nach Gespräch und Absender herein, ganz ohne KI; den Rest legst du selbst ab.</li>
+    <li><strong>Ohne Pro wird nichts über ein Anliegen geschrieben.</strong> Der nächste Schritt wird durch Regeln auf deinem Gerät gewählt, aus deinen eigenen Aufgaben und Terminen. Die Zusammenfassung und der Assistent gehören zu Pro.</li>
+    <li><strong>Mit Causabee Pro</strong> liest, solange Pro an ist, eine größere KI, was hereinkommt, sobald es kommt, und beantwortet deine Fragen. Ist Pro aus, liest das Modell von Apple auf deinem Gerät es wieder.</li>
+  </ul>
+
+  <h2>Was an eine größere KI gesendet wird</h2>
+  <ul>
+    <li><strong>Bevor etwas gesendet wird</strong>, sucht Causabee auf deinem Gerät nach Namen, Adressen und Nummern und ersetzt sie, zum Beispiel durch <code>[Person A]</code>. Links werden durch <code>[link]</code> ersetzt. Lässt sich die Tarnung nicht bauen, wird nichts gesendet.</li>
+    <li><strong>Wie viel es findet.</strong> Auf einem Testsatz erfundener Texte, nach dem die Regeln nicht geschrieben wurden, fand es <span class="recall" data-date="2026-11-16" data-of="122">95 %</span> der 122 Namen, Adressen und Nummern darin (16. November 2026). Die Texte stammen aus allen Quellen: Mails, Screenshots, Fotos, Dateien und Scans, Notizen, dem Chat sowie von Hand hinzugefügten Aufgaben und Terminen.</li>
+    <li><strong>Vor jedem Senden läuft auf deinem Gerät eine Prüfung.</strong> Steht ein Name, eine Adresse oder eine Nummer, die sie kennt, noch im Text, wird nichts gesendet, und du erfährst, welcher Eintrag zurückgehalten wurde.</li>
+    <li><strong>Was es nicht kann.</strong> Es findet nicht alles. Ein neuer Name, in ungewöhnlicher Schreibweise, in Kleinbuchstaben oder aus einem Bild falsch gelesen, kann hinausgehen. Worum es geht — eine Krankheit, ein Betrag, ein Datum, eine Rolle — wird gesendet, wie es ist, damit die KI dabei helfen kann.</li>
+    <li><strong>Mit Causabee Pro</strong> geht der getarnte Text an Causabees Server (unten), der ihn an OpenAI (GPT, USA) weitergibt und die Antwort zurücksendet. Der Server speichert nichts vom Text.</li>
+    <li><strong>Mit einem eigenen KI-Schlüssel</strong> — eine Einstellung für Entwickler — geht der getarnte Text direkt von deinem Gerät an OpenAI, nicht über Causabees Server.</li>
+    <li><strong>Die Antwort kommt auf dein Gerät zurück</strong>, wo Causabee die echten Namen wieder einsetzt und das Ergebnis speichert.</li>
+  </ul>
+  <p>Causabee bittet OpenAI, eine Anfrage nicht für später zu speichern. Nach den eigenen Bedingungen kann OpenAI Anfragen trotzdem eine Zeit lang behalten, um Missbrauch zu erkennen: siehe seine <a href="https://openai.com/policies/privacy-policy/">Bedingungen</a>. Anfragen über Causabees Server laufen über Causabees eigenes Geschäftskonto; OpenAI nutzt API-Anfragen nicht, um seine Modelle zu trainieren.</p>
+
+  <h2>Causabee Pro und sein Server</h2>
+  <p>Causabee Pro läuft auf einem kleinen Server von Causabee, auf Cloudflare Workers; seine Datenbank liegt in Westeuropa. Er hat einen einzigen Zweck: die getarnten Anfragen von Pro an den KI-Anbieter weiterzugeben und zu zählen, was sie verbraucht haben, damit das Monatslimit eingehalten werden kann.</p>
+  <ul>
+    <li><strong>Was durchläuft und nicht behalten wird</strong>: der getarnte Text jeder Anfrage und seine Antwort. Nichts davon wird gespeichert oder protokolliert.</li>
+    <li><strong>Was behalten wird</strong>, für jede Anfrage: wann sie gestellt wurde, welches Modell geantwortet hat, wie viele Tokens sie verbraucht hat und was das kostete. Für dein Konto: eine zufällige ID, die die App erzeugt, die Kauf-IDs, die Apple dem Entwickler gibt, wann dein Abo endet, und ein Fingerabdruck des Schlüssels, den deine Geräte nutzen — nie der Schlüssel selbst.</li>
+    <li><strong>Was nie dort ist</strong>: dein Name, deine Mail-Adresse, dein Apple-Konto, deine Zahlungsdaten oder irgendetwas von dem, was bei dir hereinkommt.</li>
+    <li><strong>Wie lange</strong>: solange du Pro nutzt, und die Aufzeichnung dessen, was verbraucht und gekauft wurde, solange das Gesetz den Entwickler zur Buchführung verpflichtet.</li>
+  </ul>
+  <p>Cloudflare (USA, mit EU-Auftragsverarbeitungsvertrag) betreibt den Server; OpenAI (USA) beantwortet die Anfragen. Damit dein Konto entfernt wird, schreib an <a href="mailto:ralf@chille.de">ralf@chille.de</a>.</p>
+
+  <h2>Käufe</h2>
+  <p>Causabee Plus, Causabee Pro und Guthaben werden über den App Store gekauft. Apple wickelt die Zahlung ab; der Entwickler erhält nur, was Apple jedem Entwickler mitteilt: welches Produkt gekauft wurde, wann, bis wann und ob es erstattet wurde — nie deinen Namen oder wie du bezahlt hast. Für den Kauf selbst gilt Apples <a href="https://www.apple.com/legal/privacy/">Datenschutzerklärung</a>.</p>
+
+  <h2>Google-Nutzerdaten</h2>
+  <p>Sobald „Mit Google anmelden“ angeboten wird, fragt Causabee Google um diese Berechtigungen:</p>
+  <ul>
+    <li><code>https://mail.google.com/</code> – IMAP-Zugriff von Gmail. Causabee nutzt ihn nur, um neue Mails mit deinem Label zu lesen.</li>
+    <li><code>email</code> – deine Adresse, um zu zeigen, welches Konto verbunden ist.</li>
+  </ul>
+  <p>Das Anmelde-Token liegt im macOS-Schlüsselbund auf deinem Mac. Causabee verbindet sich von deinem Mac direkt mit Google.</p>
+  <p>Google-Nutzerdaten werden nur genutzt, um die Funktionen bereitzustellen, die du in der App siehst. Mit Causabee Pro geht getarnter Text aus deinen Mails über Causabees Server an den KI-Anbieter, nur um ihn in Anliegen zu sortieren und deine Fragen zu beantworten, wie oben beschrieben. Causabee verkauft Google-Nutzerdaten <strong>nicht</strong>, nutzt sie <strong>nicht</strong> für Werbung und nutzt sie <strong>nicht</strong>, um KI- oder Machine-Learning-Modelle zu entwickeln, zu verbessern oder zu trainieren. Kein Mensch liest sie.</p>
+  <p>Causabees Nutzung und Weitergabe von Informationen, die von Google-APIs stammen, wird sich an die <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> halten, einschließlich der Anforderungen zur eingeschränkten Nutzung.</p>
+  <p>Du kannst Causabees Zugriff jederzeit auf <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entfernen.</p>
+
+  <h2>Was der Entwickler erhält</h2>
+  <p>Ohne Causabee Pro nichts: Die App hat keine Analysen, keine Absturzberichte und keine Werbung und nimmt keinen Kontakt zum Entwickler auf. Mit Pro nur, was der Server behält, wie oben beschrieben — wie viel verbraucht wurde, nie, was gefragt wurde.</p>
+
+  <h2>Diese Website</h2>
+  <p>Diese Website nutzt keine Cookies, keine Analysen und keine Schriften oder Skripte von anderen Seiten. GitHub Pages hostet sie. GitHub kann die IP-Adressen von Besuchern aus Sicherheitsgründen protokollieren; siehe <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHubs Datenschutzerklärung</a>. Diese Website merkt sich deine Wahl der Sprache in deinem Browser. Nichts davon wird gesendet.</p>
+
+  <h2>Deine Wahl</h2>
+  <ul>
+    <li><strong>Aufgaben, Termine und Kalendereinträge löschen</strong>, einzeln in der App.</li>
+    <li><strong>iCloud-Synchronisierung ausschalten</strong> in den Einstellungen von Causabee. Um zu entfernen, was synchronisiert wurde, geh in die Systemeinstellungen, zu deinem Apple-Konto, iCloud.</li>
+    <li><strong>Alles entfernen</strong>: Causabee beenden, dann den Ordner <code>~/Library/Application Support/Causabee</code> und Causabees Einträge im Schlüsselbund löschen.</li>
+    <li><strong>Google trennen</strong> auf <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Kinder</h2>
+  <p>Causabee ist nicht für Kinder unter 13 gemacht.</p>
+
+  <h2>Änderungen an dieser Erklärung</h2>
+  <p>Ändert sich diese Erklärung, wird die neue Fassung hier mit neuem Datum veröffentlicht. Jede frühere Fassung liegt im <a href="../privacy.html#earlier">öffentlichen Code-Repository</a>.</p>
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Causabee · MIT-Lizenz</span>
+  <nav aria-label="Fußzeile">
+    <a href="../privacy.html">Datenschutz</a>
+    <a href="https://github.com/causabee/disguise">GitHub</a>
+    <a href="../support.html">Support</a>
+  </nav>
+  <nav class="langswitch" aria-label="Sprache">
+    <a href="2026-11-16.html" lang="de" aria-current="page">Deutsch</a>
+    <a href="../../privacy/2026-11-16.html" lang="en">English</a>
+  </nav>
+</footer>
+</body>
+</html>
