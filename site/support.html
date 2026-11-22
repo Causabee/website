@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Support – Causabee</title>
-<meta name="description" content="Questions, a problem or an idea about Causabee? Write to support@causabee.app.">
+<meta name="description" content="Answers on plans, purchases, iCloud and what goes to OpenAI. Write to support@causabee.app.">
 <meta name="theme-color" content="#ffffff">
 <link rel="canonical" href="https://causabee.app/support.html">
 <link rel="alternate" hreflang="en" href="https://causabee.app/support.html">
@@ -27,40 +27,73 @@
     <nav class="nav__links" aria-label="Main">
       <a class="navlink" href="./#how">Overview</a>
       <a class="navlink" href="./#privacy">Privacy</a>
-      <a class="navlink" href="https://github.com/causabee/disguise">GitHub</a>
-      <a class="button button--small" href="./#download">Get the beta</a>
     </nav>
   </div>
 </header>
 
 <main id="main" class="legal">
   <h1>Support</h1>
-  <p class="dated">Questions, a problem or an idea? Write to <a href="mailto:support@causabee.app">support@causabee.app</a>.</p>
+  <p class="dated">Short answers first. Your question not here? Write to support at the end.</p>
 
-  <h2>Write to support</h2>
+  <h2 id="purchases">Purchases</h2>
+  <h3 id="restore">Pro doesn’t show on another device</h3>
+  <p>One purchase counts on all your devices, if each is signed in with the same Apple Account.</p>
+  <p>In Causabee, open Settings, then Plan and usage (on the Mac: Plan). Choose Restore Purchases. The same button is there when you change plan.</p>
+  <h3 id="cancel">Cancel a subscription</h3>
+  <p>You cancel in your Apple Account, not in Causabee. Apple shows the steps for iPhone, iPad and Mac.</p>
+  <p><a class="more" href="https://support.apple.com/en-us/118428">Cancel a subscription (Apple)<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></p>
+  <h3 id="refund">Get a refund</h3>
+  <p>Apple decides on refunds, not Causabee. You ask Apple, on its page.</p>
+  <p><a class="more" href="https://support.apple.com/en-us/118223">Request a refund (Apple)<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></p>
+
+  <h2 id="plans">Plans and credits</h2>
+  <h3 id="plans-hold">What do Free, Plus and Pro hold?</h3>
+  <ul><li><strong>Free</strong> holds 3 open matters. A closed matter doesn’t count. Apple’s model on your device reads what comes in. Nothing of it leaves your device.</li><li><strong>Plus</strong> holds every matter. It reads the same way as Free.</li><li><strong>Pro</strong> holds every matter and 3,000 credits a month. A bigger AI reads what comes in, writes each matter’s brief and answers in the chat. Names are disguised first.</li></ul>
+  <p>You see the price in the App Store, in your own currency.</p>
+  <h3 id="credits">What is a credit?</h3>
+  <p>Pro’s work is counted in credits. After each piece of work, Causabee says how many credits it used. A top-up adds 1,000 credits, kept until you use them.</p>
+  <h3 id="start-top-up">What is the free top-up at the start?</h3>
+  <p>A new Causabee gets one top-up for free: 1,000 credits, once for each Apple Account. At its first start, the app asks Causabee’s server for it by itself, with Apple’s signed record of the download and a random id the app made. Nothing of a matter goes, and no name.</p>
+  <h3 id="signup">Do I need to sign up?</h3>
+  <p>No. Your plan and credits belong to your Apple Account and to a random id the app makes by itself. There is no sign-up and no name.</p>
+
+  <h2 id="devices">Your matters on other devices</h2>
+  <h3 id="icloud">Matters are missing on another device</h3>
+  <p>Matters move between your devices through your own iCloud, not through Causabee’s server. Each device needs the same Apple Account.</p>
+  <p>On the Mac, iCloud sync is off at first. Switch it on in Settings, under iCloud. It takes effect when Causabee starts again.</p>
+  <p>On the iPhone and iPad there is no switch in Causabee. Check that the device is signed in to iCloud, and that iCloud is allowed for Causabee in the device’s own Settings.</p>
+  <h3 id="mail-account">Do I need a mail account?</h3>
+  <p>No. A mail account is optional. Mail is one source among others: screenshots, photos, files and scans, notes, the chat, and tasks and dates added by hand work without any account.</p>
+
+  <h2 id="openai">What goes to OpenAI</h2>
+  <h3 id="sent">What goes to OpenAI, and what never does?</h3>
+  <p>Only with Pro, or a top-up. Then what comes in goes to OpenAI as text, through Causabee’s own server, whatever its source.</p>
+  <p>Before it goes, names, addresses and numbers are replaced on your device first. About <span class="recall" data-date="2026-11-17" data-of="122">98 %</span> of them are found. A check holds back a text that still has a name Causabee knows.</p>
+  <p>Causabee’s server passes the request on and sends the answer back. It keeps no text, only how much each request used.</p>
+  <p>Pictures and files themselves are never sent. Their text is read on your device.</p>
+  <p>Without Pro, Apple’s model on your device does the reading. Nothing of what comes in leaves your device.</p>
+  <p><a class="more" href="privacy.html">The whole story: the privacy policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></p>
+
+  <h2 id="delete">Your account and data</h2>
+  <h3 id="delete-account">How do I delete my account and my data?</h3>
+  <p>What is on your own devices and in your iCloud, you delete yourself. <a href="privacy.html">The privacy policy</a> says where, under “Your choices”.</p>
+  <p>The server makes an account when you get the free top-up, or buy Pro or a top-up. Support can remove it. <a href="mailto:support@causabee.app">Write to support</a> to ask. Support tells you what it needs to find it.</p>
+  <p>What the server keeps is a record of use and purchases: when, which model, how many tokens, what it cost. No text and no name. Part of it stays as long as the law requires the developer to keep accounts. The whole list is in the <a href="privacy.html">privacy policy</a>, under “Causabee Pro and its server”.</p>
+
+  <h2 id="write">Write to support</h2>
   <p>Say what you did, what you expected and what happened. Add the device (Mac, iPhone or iPad) and the version of Causabee.</p>
-  <p>Please leave out names, numbers and the text of what came in. A short description is enough.</p>
+  <p>Please leave out names, numbers and the text of what came in, whatever its source. A short description is enough.</p>
   <p><a class="button" href="mailto:support@causabee.app?subject=Causabee%20support">Write to support</a></p>
-  <p class="fine">Opens a mail to support@causabee.app.</p>
-
-  <h2>The beta</h2>
-  <p>To try Causabee, ask for the beta on the home page. You get a TestFlight invitation for all your devices.</p>
-  <p><a class="more" href="./#download">Ask for the beta<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></p>
-
-  <h2>Code and open issues</h2>
-  <p>Known problems and ideas are on GitHub.</p>
-  <p><a class="more" href="https://github.com/causabee/disguise/issues">Open issues on GitHub<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a></p>
-
-  <h2>Your data</h2>
-  <p>How Causabee handles what comes in, and what it sends to an AI: <a href="privacy.html">the privacy policy</a>.</p>
+  <p class="fine">Opens a message to support@causabee.app.</p>
 </main>
 
 <footer class="wrap footer">
   <span>© 2026 Causabee</span>
   <nav aria-label="Footer">
-    <a href="privacy.html">Privacy policy</a>
-    <a href="https://github.com/causabee/disguise">GitHub</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a>
     <a href="support.html">Support</a>
+    <a href="imprint.html">Imprint</a>
   </nav>
   <nav class="langswitch" aria-label="Language">
     <a href="de/support.html" lang="de">Deutsch</a>
