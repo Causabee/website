@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-twin="../de/privacy/2026-11-22.html">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Causabee</title>
+<meta name="description" content="How Causabee handles your mail, files and Google account data: kept on your Mac, disguised before anything goes to an AI, never sent to the developer.">
+<meta name="theme-color" content="#ffffff">
+<script src="../lang.js?v=1"></script>
+<link rel="icon" href="../assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+<link rel="preload" href="../assets/fonts/SourceSerif4.woff2" as="font" type="font/woff2" crossorigin>
+<!-- ?v= is the start of styles.css's shasum: change it with the file, or browsers keep the old one for up to 10 minutes. -->
+<link rel="stylesheet" href="../styles.css?v=18f91102">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href=".././"><img src="../assets/icon.svg" alt="" width="28" height="28">Causabee</a>
+    <nav class="nav__links" aria-label="Main">
+      <a class="navlink" href=".././#how">Overview</a>
+      <a class="navlink" href=".././#privacy">Privacy</a>
+      <a class="button button--small" href=".././#download">Get the beta</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="legal">
+  <h1>Privacy Policy</h1>
+  <p class="dated">Effective 22 November 2026</p>
+
+  <section class="summary" aria-labelledby="short">
+    <h2 id="short">The short version</h2>
+    <ul>
+      <li>Your mail, files and matters are kept <strong>on your devices</strong>. If you turn on iCloud sync, they also go to <strong>your own private iCloud</strong>.</li>
+      <li>Without Causabee Pro, <strong>Apple’s model on your device</strong> reads what comes in. <strong>Nothing leaves it.</strong></li>
+      <li>With Causabee Pro, or a top-up, text goes to a bigger AI — but before that, <strong>names, addresses and numbers are replaced</strong>: most of them, not all (see below). A check runs before every send; if it finds a name it knows, nothing is sent. It passes through <strong>Causabee’s server in the EU</strong>, which keeps none of it: only how much each request used.</li>
+      <li>Causabee has <strong>no analytics, no ads and no accounts with your name</strong>. Purchases go through Apple; the developer never sees who you are or how you pay.</li>
+      <li>How Causabee hides names is <a href="https://github.com/causabee/disguise"><strong>open source</strong></a>, so anyone can check it.</li>
+    </ul>
+  </section>
+
+  <h2>Who makes Causabee</h2>
+  <p>Causabee is an app for the Mac, the iPhone and the iPad, made by Ralf Chille. Until version 0.5 it was called Matterbee; the name is all that changed. For any question about this policy or your data, write to <a href="mailto:support@causabee.app">support@causabee.app</a>.</p>
+  <p>Everything below describes what the app does on your own devices, which services it talks to for you, and — for Causabee Pro only — what Causabee’s own server sees and keeps.</p>
+
+  <h2>What Causabee reads</h2>
+  <h3>Mail</h3>
+  <p>You connect a mail account in the app: Gmail, iCloud, or another provider over IMAP. You sign in with an app password; “Sign in with Google” is not offered yet. Causabee then reads <strong>only new mail with the label you use for it</strong> (for example “Causabee”). It does not read the rest of your mailbox, and it does not even mark the mail it reads as read.</p>
+  <p>Causabee <strong>never writes to your mailbox</strong>. It cannot send mail, and it cannot delete or move mail. A message Causabee drafts for you opens in your mail app, and you send it. A document you scan on the iPhone is kept on your iPhone, in the Files app under “On My iPhone › Causabee”.</p>
+  <h3>Files and screenshots</h3>
+  <p>Files, PDFs and screenshots are read only when you drop them into Causabee.</p>
+  <h3>Calendar and Reminders</h3>
+  <p>If you add an appointment or a task to Calendar or Reminders, Causabee asks macOS for access first. It keeps the items you connected in step with Calendar and Reminders, on your Mac. Apple’s own services sync them, as they do for any other app.</p>
+
+  <h2>Where your data is kept</h2>
+  <ul>
+    <li><strong>On your Mac</strong>, in <code>~/Library/Application Support/Causabee</code>. Without iCloud sync, nothing of it leaves this Mac.</li>
+    <li><strong>In your private iCloud</strong>, only if you turn on iCloud sync in the settings (it is off at first). Your matters, tasks, dates, notes, the assistant’s answers, a short digest of each mail, and the full text of each mail and scanned file Causabee read are kept in the private iCloud database of your Apple Account, so every one of your devices has them. The full texts are end-to-end encrypted. Only you can read it. The developer has no access.</li>
+    <li><strong>In a folder for each matter</strong>, in iCloud Drive or in a folder you choose, for the files that belong to it.</li>
+    <li><strong>In your Keychain</strong>, shared through iCloud Keychain, for your mail app password, the key that lets your devices use Causabee Pro, and any AI provider keys of your own.</li>
+  </ul>
+
+  <h2>Who reads what comes in</h2>
+  <p>Causabee uses an AI model to sort what comes in — mail, screenshots, photos, scans, files — into matters, find tasks and dates, write summaries and answer your questions.</p>
+  <ul>
+    <li><strong>Mail that is clearly not about a matter</strong>, such as newsletters, is left out by simple rules on your device, without any AI.</li>
+    <li><strong>Without Causabee Pro</strong>, Apple’s model on your device reads new mail when you tap “Sort in”, and the screenshots and scans you add. Nothing of it is sent anywhere.</li>
+    <li><strong>On a device without Apple Intelligence</strong>, and without Pro, new mail comes in by its conversation and by who sent it, with no AI at all; you place the rest.</li>
+    <li><strong>Without Pro, nothing is written about a matter.</strong> The next step is chosen by rules on your device, from your own tasks and dates. The summary and the assistant are part of Pro.</li>
+    <li><strong>With Causabee Pro</strong>, while Pro is on, a bigger AI reads what comes in, as it comes, and answers your questions. With Pro off, Apple’s model on your device reads it again.</li>
+  </ul>
+
+  <h2>What is sent to a bigger AI</h2>
+  <ul>
+    <li><strong>Before anything is sent</strong>, Causabee looks for names, addresses and numbers on your device and replaces them, for example with <code>[Person A]</code>. Links are replaced with <code>[link]</code>. If the disguise can’t be built, nothing is sent.</li>
+    <li><strong>How much it finds.</strong> On a test set of made-up texts it was not written against, it found <span class="recall" data-date="2026-11-17" data-of="122">98 %</span> of the 122 names, addresses and numbers in them (17 November 2026). The texts come from every source: mail, screenshots, photos, files and scans, notes, the chat, and tasks and dates added by hand.</li>
+    <li><strong>Before every send, a check runs on your device.</strong> If a name, address or number it knows is still in the text, nothing is sent, and you are told which item was held back.</li>
+    <li><strong>What it cannot do.</strong> It does not find everything. A new name, in an unusual spelling, in lowercase, or misread from a picture, can go out. What a text is about — an illness, an amount, a date, a role — is sent as it is, so the AI can help with it.</li>
+    <li><strong>With Causabee Pro</strong>, the disguised text goes to Causabee’s server (below), which passes it on to OpenAI (GPT, USA) and sends the answer back. The server stores none of the text.</li>
+    <li><strong>With an AI provider key of your own</strong> — a setting for developers — the disguised text goes straight from your device to OpenAI, and not through Causabee’s server.</li>
+    <li><strong>The answer comes back to your device</strong>, where Causabee puts the real names back in and stores the result.</li>
+  </ul>
+  <p>Causabee asks OpenAI not to keep a request for later use. By its own terms, OpenAI may still keep requests for a time, to watch for misuse: see <a href="https://openai.com/policies/privacy-policy/">its terms</a>. Requests through Causabee’s server are made with Causabee’s own business account; OpenAI does not use API requests to train its models.</p>
+
+  <h2>Causabee Pro and its server</h2>
+  <p>Causabee Pro runs on a small server of Causabee’s, on Cloudflare Workers; its database is kept in Western Europe. It exists for one thing: to pass Pro’s disguised requests on to the AI provider and count what they used, so the month’s limit can be kept.</p>
+  <ul>
+    <li><strong>What passes through and is not kept</strong>: the disguised text of each request and its answer. They are not stored and not logged.</li>
+    <li><strong>What is kept</strong>, for each request: when it was made, which model answered, how many tokens it used and what that cost. For your account: a random id made by the app, the purchase ids Apple gives the developer, when your subscription ends, and a fingerprint of the key your devices use — never the key itself.</li>
+    <li><strong>What is never there</strong>: your name, your email address, your Apple Account, your payment details, or anything of your mail.</li>
+    <li><strong>How long</strong>: for as long as you use Pro, and the record of what was used and bought as long as the law requires the developer to keep accounts.</li>
+  </ul>
+  <p>Cloudflare (USA, with an EU data processing agreement) runs the server; OpenAI (USA) answers the requests. To have your account removed, write to <a href="mailto:support@causabee.app">support@causabee.app</a>.</p>
+
+  <h2>Purchases</h2>
+  <p>Causabee Plus, Causabee Pro and top-ups are bought through the App Store. Apple handles the payment; the developer receives only what Apple tells every developer: which product was bought, when, until when, and whether it was refunded — never your name or how you paid. Apple’s <a href="https://www.apple.com/legal/privacy/">privacy policy</a> applies to the purchase itself.</p>
+
+  <h2>Google user data</h2>
+  <p>Once “Sign in with Google” is offered, Causabee will ask Google for these permissions:</p>
+  <ul>
+    <li><code>https://mail.google.com/</code> – Gmail’s IMAP access. Causabee uses it only to read new mail with your label.</li>
+    <li><code>email</code> – your address, to show which account is connected.</li>
+  </ul>
+  <p>The sign-in token is kept in the macOS Keychain on your Mac. Causabee connects to Google directly from your Mac.</p>
+  <p>Google user data is used only to provide the features you see in the app. With Causabee Pro, disguised text from your mail goes to the AI provider through Causabee’s server, only to sort it into matters and answer your questions, as described above. Causabee does <strong>not</strong> sell Google user data, does <strong>not</strong> use it for advertising, and does <strong>not</strong> use it to develop, improve or train AI or machine-learning models. No person reads it.</p>
+  <p>Causabee’s use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <p>You can remove Causabee’s access at any time at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>What the developer receives</h2>
+  <p>Without Causabee Pro, only one call, at the first start: the app asks Causabee’s server for the start credit, with Apple’s signed record of the download and a random id made by the app — nothing of a matter, and no name. The app has no analytics, no crash reports and no advertising. With Pro, also what the server keeps, as described above — how much was used, never what was asked.</p>
+
+  <h2>This website</h2>
+  <p>This website uses no cookies, no analytics and no fonts or scripts from other sites. It is hosted by GitHub Pages. GitHub may log visitors’ IP addresses for security; see <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. This website remembers your choice of language in your browser. None of it is sent.</p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li><strong>Delete tasks, dates and appointments</strong> one by one in the app.</li>
+    <li><strong>Turn off iCloud sync</strong> in Causabee’s settings. To remove what was synced, go to System Settings, your Apple Account, iCloud.</li>
+    <li><strong>Remove everything</strong>: quit Causabee, then delete the folder <code>~/Library/Application Support/Causabee</code> and Causabee’s entries in the Keychain.</li>
+    <li><strong>Disconnect Google</strong> at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>Causabee is not made for children under 13.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version is posted here with a new date. Earlier versions are below, by date.</p>
+  <p id="earlier">Earlier versions: <a class="more" href="../privacy/2026-11-18.html">18 Nov 2026</a> · <a class="more" href="../privacy/2026-11-16.html">16 Nov 2026</a> · <a class="more" href="../privacy/2026-11-10.html">10 Nov 2026</a> · <a class="more" href="../privacy/2026-10-28.html">28 Oct 2026</a> · <a class="more" href="../privacy/2026-10-02.html">2 Oct 2026</a> · <a class="more" href="../privacy/2026-09-30.html">30 Sep 2026</a></p>
+</main>
+
+<footer class="wrap footer">
+  <span>© 2026 Causabee</span>
+  <nav aria-label="Footer">
+    <a href="../privacy.html">Privacy</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of use</a>
+    <a href="../support.html">Support</a>
+    <a href="../imprint.html">Imprint</a>
+  </nav>
+  <nav class="langswitch" aria-label="Language">
+    <a href="../de/privacy/2026-11-22.html" lang="de">Deutsch</a>
+    <a href="2026-11-22.html" lang="en" aria-current="page">English</a>
+  </nav>
+</footer>
+</body>
+</html>
