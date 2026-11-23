@@ -772,3 +772,8 @@ a:hover { color: var(--gold-hover); text-decoration: underline; }
   .beeidea__facts { padding-left: 0; padding-top: 24px; border-left: 0; border-top: 1px solid rgba(255, 255, 255, 0.12); }
 }
 @media (max-width: 519px) { .beemap__jobs { grid-template-columns: minmax(0, 1fr); } }
+
+/* The App Store badge (23 Nov 2026): Apple's own artwork, unchanged, at least 40 px high, with clear space around it. */
+.store-badge { display: inline-flex; padding: 4px; border-radius: 12px; line-height: 0; }
+.store-badge img { display: block; height: 50px; width: auto; }
+.store-badge:focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
